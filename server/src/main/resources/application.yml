@@ -1,0 +1,22 @@
+spring:
+  kafka:
+    bootstrap-servers: localhost:9092
+    producer:
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer
+    consumer:
+      group-id: nft-platform
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      auto-offset-reset: latest
+
+domains:
+  cards:
+    timeout: 5 # minutes
+    pollInterval: 2 # seconds
+
+kafka:
+  topics:
+      cardRequest: request-topic
+      cardResponse: posting-request-topic
+

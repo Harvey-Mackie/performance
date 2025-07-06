@@ -2,7 +2,6 @@ package com.example.demo.core.messageBuilder;
 
 import java.util.List;
 
-import lombok.AllArgsConstructor;
 import lombok.Data;
 
 @Data

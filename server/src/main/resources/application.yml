@@ -1,3 +1,5 @@
+environment: local
+
 spring:
   kafka:
     bootstrap-servers: localhost:9092
@@ -12,11 +14,11 @@ spring:
 
 domains:
   cards:
-    timeout: 5 # minutes
-    pollInterval: 2 # seconds
+    timeout: 5
+    pollInterval: 2
+    messageCount: 10
 
 kafka:
   topics:
-      cardRequest: request-topic
-      cardResponse: posting-request-topic
-
+    cardRequest: request-topic
+    cardResponse: posting-request-topic
